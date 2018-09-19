@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<div class="container" style="margin-top: 3rem">
+    <article class="row">
+        <div class="col-8">
+            {{ content }}
+        </div>
+        <div class="col-4">
+          {% for category in site.categories %}
+          <h5>{{ category[0] }}</h5>
+          <ul>
+            {% for post in category[1] %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+          </ul>
+          {% endfor %}
+        </div>
+    </article>
+</div>
