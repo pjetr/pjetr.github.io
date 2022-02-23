@@ -1,0 +1,92 @@
+.clocker {
+  width: 100%;
+  max-width: 960px;
+  padding: 15px;
+  margin: 15px;
+  border: 1px solid #eee;
+  background-color: #f8f8f8;
+
+  font-size: 32px;
+}
+
+.clockerInput {
+  display: flex;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.clockerInput input {
+  flex: 1;
+  font-size: 32px;
+}
+
+.button {
+  appearance: none;
+  background: none;
+  font-size: 32px;
+  padding-left: 12px;
+  padding-right: 12px;
+  outline: none;
+  border: 2px solid transparent;
+  color: rgb(112, 76, 182);
+  padding-bottom: 4px;
+  cursor: pointer;
+  background-color: rgba(112, 76, 182, 0.1);
+  border-radius: 2px;
+  transition: all 0.15s;
+  display: block;
+  width: 55px;
+  margin-left: 15px;
+}
+
+.button:hover,
+.button:focus {
+  border: 2px solid rgba(112, 76, 182, 0.4);
+}
+
+.button:active {
+  background-color: rgba(112, 76, 182, 0.2);
+}
+
+.timestampIn,
+.timestampOut {
+  display: flex;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 5px;
+}
+
+.timestampIn span {
+  background-color: #6db026;
+}
+.timestampIn:before {
+  content: 'IN';
+  width: 130px;
+  background-color: #609b21;
+}
+
+.timestampOut span {
+  background-color: #e63205;
+}
+.timestampOut:before {
+  content: 'OUT';
+  width: 130px;
+  background-color: #cd2d04;
+}
+
+.timestampIn span,
+.timestampOut span {
+  flex: 1;
+}
+
+.calc {
+  display: flex;
+  padding-right: 70px;
+  padding-left: 130px;
+  text-align: center;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+.calc span {
+  flex: 1;
+}
